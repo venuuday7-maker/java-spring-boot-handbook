@@ -1,0 +1,2 @@
+Marks: [42, 77, 15, 98, 63]
+Highest mark: 98

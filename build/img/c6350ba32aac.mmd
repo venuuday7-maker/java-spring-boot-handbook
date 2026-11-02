@@ -1,0 +1,5 @@
+flowchart LR
+    A["Source code<br/>HelloWorld.java<br/>(text you write)"] -->|"javac<br/>(compiler)"| B["Bytecode<br/>HelloWorld.class<br/>(portable instructions)"]
+    B -->|"java<br/>(starts the JVM)"| C["JVM<br/>(Java Virtual Machine)"]
+    C --> D["Operating system<br/>and hardware"]
+    D --> E["Output on screen,<br/>files, network"]

@@ -1,0 +1,10 @@
+flowchart TB
+    subgraph JDK["JDK: build and run"]
+        T["Tools: javac, javap, jar, jshell, jlink, jdb"]
+        subgraph JRE["JRE: run"]
+            L["Standard class libraries<br/>java.lang, java.util, java.io, ..."]
+            subgraph JVM["JVM: execute bytecode"]
+                V["Class loader, memory areas,<br/>interpreter, JIT compiler, garbage collector"]
+            end
+        end
+    end

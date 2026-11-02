@@ -1,0 +1,61 @@
+@page { size: A4; margin: 20mm 17mm 22mm 17mm;
+  @bottom-center { content: counter(page); font: 9pt Georgia, serif; color: #555; }
+  @top-right { content: string(chapter); font: 8.5pt "Segoe UI", sans-serif; color: #777; } }
+@page :first { @top-right { content: none; } @bottom-center { content: none; } }
+
+:root { --ink:#1f2933; --accent:#0b5cad; --soft:#eef4fb; }
+html { font-size: 10pt; }
+body { font-family: Georgia, "Times New Roman", serif; color: var(--ink); line-height: 1.5; max-width: none; margin: 0; padding: 0; }
+
+.titlepage { padding-top: 70mm; text-align:center; break-after: page; }
+.tp-kicker { letter-spacing: .25em; font: 600 10pt "Segoe UI", sans-serif; color: var(--accent); }
+.tp-title { font: 700 38pt/1.1 "Segoe UI", sans-serif; margin: 14mm 0 8mm; color:#10243e; border:none; }
+.tp-rule { width: 40mm; height: 3px; background: var(--accent); margin: 0 auto 8mm; }
+.tp-sub { font: 400 20pt "Segoe UI", sans-serif; margin:0 0 6mm; }
+.tp-desc { max-width: 130mm; margin: 0 auto 14mm; font-style: italic; color:#444; }
+.tp-ver { font: 9.5pt "Segoe UI", sans-serif; color:#666; }
+
+
+h1, h2, h3, h4 { font-family: "Segoe UI", Arial, sans-serif; color:#10243e; line-height:1.25; }
+h1 { font-size: 26pt; page-break-before: always; border-bottom: 3px solid var(--accent); padding: 45mm 0 4mm; margin-bottom: 8mm; }
+h2 { font-size: 20pt; page-break-before: always; string-set: chapter content(); border-bottom: 1px solid #c9d4e0; padding-bottom: 2mm; margin-top: 0; }
+h2.nobreak { page-break-before: auto; break-before: auto; margin-top: 8mm; }
+h3 { font-size: 14pt; margin-top: 8mm; color: var(--accent); }
+h4 { font-size: 11.5pt; margin-top: 6mm; }
+h2, h3, h4 { break-after: avoid; }
+p { margin: 0 0 3mm; text-align: justify; hyphens: auto; }
+img { max-width: 100%; display:block; margin: 4mm auto 1mm; }
+figure { margin: 4mm 0; break-inside: avoid; }
+figcaption { text-align:center; font: italic 9pt "Segoe UI", sans-serif; color:#555; }
+
+code { font-family: Consolas, "Courier New", monospace; font-size: .88em; background:#f1f3f5; padding: 0 2px; border-radius:2px; }
+pre { background:#f6f8fa; border:1px solid #dde3ea; border-left: 3px solid var(--accent); border-radius: 3px; padding: 3mm 4mm; overflow:hidden; white-space: pre-wrap; word-break: break-word; break-inside: avoid-page; margin: 2mm 0 4mm; }
+pre code { background:none; padding:0; font-size: 8.6pt; line-height:1.38; }
+div.sourceCode { margin: 0; }
+
+table { border-collapse: collapse; width:100%; margin: 3mm 0 5mm; font: 9pt "Segoe UI", sans-serif; break-inside: avoid; }
+th { background: var(--accent); color:#fff; padding: 2mm 3mm; text-align:left; }
+td { border:1px solid #d5dde6; padding: 1.8mm 3mm; vertical-align: top; }
+tr:nth-child(even) td { background: #f7f9fc; }
+
+div.tip, div.warning, div.interview, div.best, div.note, div.mistake, div.analogy, div.exercise {
+  margin: 4mm 0; padding: 2.5mm 4mm; border-left: 4px solid; border-radius: 3px; break-inside: avoid; font-size: .96em; }
+div.tip { background:#ecf8f1; border-color:#1f9d55; }
+div.warning, div.mistake { background:#fdf0ee; border-color:#d64533; }
+div.interview { background:#f3effb; border-color:#7a4fd0; }
+div.best { background:#eef4fb; border-color:#0b5cad; }
+div.note { background:#f6f6f6; border-color:#888; }
+div.analogy { background:#fff7e6; border-color:#d9930d; }
+div.exercise { background:#eef7f9; border-color:#1496ad; }
+div.tip p, div.warning p, div.interview p, div.best p, div.note p, div.mistake p, div.analogy p, div.exercise p { margin: 0 0 2mm; text-align:left; }
+.sourceCode span { white-space: pre-wrap; }
+
+.titlepage p { text-align: center; }
+.toc { break-after: page; }
+h2.toc-title { break-before: auto !important; page-break-before: auto !important; font-size: 22pt; margin-bottom: 4mm; }
+.toc-row a { display:flex; align-items: baseline; color: var(--ink); text-decoration: none; }
+.toc-row .t { flex: 0 1 auto; }
+.toc-row .d { flex: 1 1 auto; border-bottom: 1px dotted #999; margin: 0 2mm; transform: translateY(-1mm); }
+.toc-row .n { flex: 0 0 auto; font-variant-numeric: tabular-nums; }
+.toc-row.l1 { font: 600 10.5pt "Segoe UI", sans-serif; margin-top: 4mm; }
+.toc-row.l2 { padding-left: 7mm; margin: .8mm 0; }

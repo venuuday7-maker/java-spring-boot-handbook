@@ -1,0 +1,12 @@
+widening: 42 -> 42 -> 42.0
+(int) 3.99 = 3, Math.round(3.99) = 4
+(int) -3.99 = -3
+7 / 2 = 3
+7 / 2.0 = 3.5
+(double) 7 / 2 = 3.5
+(double) (7 / 2) = 3.0
+'A' + 1 = 66
+(char) ('A' + 1) = B
+letter after ++ = B
+byte after += 5: 15
+100 + 100 as bytes promoted to int: 200

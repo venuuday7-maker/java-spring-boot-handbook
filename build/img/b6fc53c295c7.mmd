@@ -1,0 +1,11 @@
+flowchart TB
+    subgraph SHARED["Shared by all threads"]
+        H["Heap<br/>all objects and arrays<br/>(garbage collected)"]
+        M["Metaspace<br/>class metadata<br/>(native memory)"]
+        C["Code cache<br/>JIT-compiled machine code"]
+    end
+    subgraph PERTHREAD["One set per thread"]
+        S["Stack<br/>frames: locals, parameters,<br/>operand stack"]
+        P["Program counter<br/>current instruction"]
+        N["Native method stack"]
+    end

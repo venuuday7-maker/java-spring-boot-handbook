@@ -1,0 +1,10 @@
+flowchart TD
+    S([Start]) --> A["largest = first number"]
+    A --> B{"Any numbers left?"}
+    B -- Yes --> C["Take the next number n"]
+    C --> D{"n > largest?"}
+    D -- Yes --> E["largest = n"]
+    D -- No --> B
+    E --> B
+    B -- No --> F["Report largest"]
+    F --> T([End])

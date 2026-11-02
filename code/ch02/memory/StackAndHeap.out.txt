@@ -1,0 +1,3 @@
+number        = 10
+counter.value = 1
+Caught StackOverflowError after many frames: true

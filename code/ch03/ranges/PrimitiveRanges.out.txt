@@ -1,0 +1,9 @@
+byte    8 bits: -128 to 127
+short   16 bits: -32768 to 32767
+int     32 bits: -2147483648 to 2147483647
+long    64 bits: -9223372036854775808 to 9223372036854775807
+float   32 bits: max 3.4028235E38
+double  64 bits: max 1.7976931348623157E308
+char    16 bits: 0 to 65535
+boolean values: true/false, e.g. active = true
+Default int field: 0, boolean: false, String: null

@@ -1,0 +1,8 @@
+max           = 2147483647
+max + 1       = -2147483648
+min - 1       = 2147483647
+int product   = 2043514880
+long product  = 9000000000000
+addExact says: integer overflow
+(byte) 200    = -56
+(int) 3 billion = -1294967296

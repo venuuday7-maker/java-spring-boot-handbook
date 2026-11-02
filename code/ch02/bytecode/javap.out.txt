@@ -1,0 +1,27 @@
+Compiled from "Add.java"
+public class Add {
+  public Add();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  static int add(int, int);
+    Code:
+       0: iload_0
+       1: iload_1
+       2: iadd
+       3: istore_2
+       4: iload_2
+       5: ireturn
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       3: iconst_2
+       4: iconst_3
+       5: invokestatic  #13                 // Method add:(II)I
+       8: invokedynamic #19,  0             // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+      13: invokevirtual #23                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      16: return
+}

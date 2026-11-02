@@ -1,0 +1,4 @@
+tools/
+build/node_modules/
+build/*.png
+__pycache__/

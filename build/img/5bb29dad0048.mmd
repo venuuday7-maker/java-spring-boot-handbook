@@ -1,0 +1,7 @@
+flowchart LR
+    A["Write<br/>Add.java"] --> B["Compile<br/>javac"]
+    B --> C["Class file<br/>Add.class"]
+    C --> D["Load<br/>class loaders"]
+    D --> E["Link<br/>verify, prepare,<br/>resolve"]
+    E --> F["Initialise<br/>static init"]
+    F --> G["Execute<br/>interpreter + JIT"]

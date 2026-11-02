@@ -1,0 +1,10 @@
+[ClassLoadingDemo class is being initialized]
+main() begins
+Loader of String:           null
+Loader of this class:       app
+Parent of application loader: platform
+Before first use of Engine
+  [Engine class is being initialized]
+  Engine started
+After first use of Engine
+  Engine started

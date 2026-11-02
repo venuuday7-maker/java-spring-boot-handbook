@@ -1,0 +1,9 @@
+boxed = 100, unboxed + 1 = 101
+list = [7]
+127 == 127 : true
+128 == 128 : false
+128 equals 128 : true
+Unboxing null -> NullPointerException
+parsed = 1234, rate = 7.5
+For input string: "12a"
+Integer.MAX_VALUE = 2147483647, compare(3, 9) = -1, toBinaryString(10) = 1010

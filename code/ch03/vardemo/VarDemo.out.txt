@@ -1,0 +1,6 @@
+Integer
+Double
+String
+ArrayList [pen]
+item: pen
+1

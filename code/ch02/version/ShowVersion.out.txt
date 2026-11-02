@@ -1,0 +1,2 @@
+Java feature version: 21
+Java vendor: Eclipse Adoptium

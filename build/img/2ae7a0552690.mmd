@@ -1,0 +1,10 @@
+flowchart LR
+    L["1. Loading<br/>find the bytes,<br/>create the Class object"] --> V["2. Linking"]
+    subgraph V["2. Linking"]
+        direction TB
+        V1["Verification<br/>is the bytecode safe and valid?"]
+        V2["Preparation<br/>allocate static fields,<br/>set default values"]
+        V3["Resolution<br/>turn symbolic names<br/>into direct references"]
+        V1 --> V2 --> V3
+    end
+    V --> I["3. Initialisation<br/>run static initialisers<br/>and static blocks"]

@@ -1,0 +1,6 @@
+Subtotal: 59.97
+Tax 18%:  10.79
+Total:    70.76
+BigDecimal total: 70.76
+double: ten payments of 0.10 = 0.9999999999999999
+double equals 1.0 ? false

@@ -1,0 +1,12 @@
+0.1 + 0.2          = 0.30000000000000004
+0.1 + 0.2 == 0.3   ? false
+close enough       ? true
+float 0.1f + 0.2f  = 0.3
+float 16777216+1   = 1.6777216E7
+BigDecimal sum     = 0.3
+BigDecimal == 0.3  ? true
+1.0 / 0            = Infinity
+0.0 / 0.0          = NaN
+NaN == NaN         ? false
+isNaN(0.0 / 0.0)   ? true
+int 10 / 0         -> / by zero
